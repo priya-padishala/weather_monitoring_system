@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Monitoring System</title>
+</head>
+<body>
+    <h1>Current Weather in {{ weather_data['name'] }}</h1>
+    <p>Temperature: {{ weather_data['main']['temp'] }}°C</p>
+    <p>Humidity: {{ weather_data['main']['humidity'] }}%</p>
+    <p>Wind Speed: {{ weather_data['wind']['speed'] }} m/s</p>
+    <p>Condition: {{ weather_data['weather'][0]['main'] }}</p>
+</body>
+</html>
